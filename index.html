@@ -5,68 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Runtime Versions</title>
 	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 40px;
-			background: #f5f7fa;
-			color: #1f2933;
-		}
-
-		h1 {
-			margin-bottom: 16px;
-		}
-
-		table {
-			width: 100%;
-			max-width: 640px;
-			border-collapse: collapse;
-			background: #ffffff;
-		}
-
-		th,
-		td {
-			padding: 12px 16px;
-			border: 1px solid #d2d6dc;
-			text-align: left;
-		}
-
-		th {
-			background: #e5e7eb;
-		}
-
-		td.version {
-			font-weight: 700;
-			color: #0f766e;
-		}
+		body { font-family: Arial, sans-serif; margin: 40px; background: #f5f7fa; color: #1f2933; }
+		ul#runtimes { list-style: none; padding: 0; max-width: 640px; }
+		li.runtime { padding: 12px 16px; border: 1px solid #d2d6dc; background: #fff; margin-bottom: 8px; }
+		li.runtime .ver { font-weight: 700; color: #0f766e; }
 	</style>
 </head>
 <body>
 	<h1>Runtime Versions</h1>
-	<table>
-		<thead>
-			<tr>
-				<th>Runtime</th>
-				<th>Version</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Node</td>
-				<td class="version">v22.0.0</td>
-			</tr>
-			<tr>
-				<td>Python</td>
-				<td class="version">3.12.0</td>
-			</tr>
-			<tr>
-				<td>Go</td>
-				<td class="version">1.23.0</td>
-			</tr>
-			<tr>
-				<td>Rust</td>
-				<td class="version">1.79.0</td>
-			</tr>
-		</tbody>
-	</table>
+	<ul id="runtimes">
+		<li class="runtime"><b>Node</b> <span class="ver">v22.0.0</span></li>
+		<li class="runtime"><b>Python</b> <span class="ver">3.12.0</span></li>
+		<li class="runtime"><b>Go</b> <span class="ver">1.23.0</span></li>
+		<li class="runtime"><b>Rust</b> <span class="ver">1.79.0</span></li>
+	</ul>
 </body>
 </html>
